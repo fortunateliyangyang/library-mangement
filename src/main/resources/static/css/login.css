@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
+
+body{
+    position:relative;
+    overflow:hidden;
+    font-family: Lora, serif;font-family: 'Roboto Mono', sans-serif;
+    background: #f5f5f5;
+
+}
+.container{
+    margin-top:10%;
+    width: 20%;
+    border-radius: 5%
+}
+
+/*’À∫≈√‹¬Î*/
+.tab-content{
+    margin: 10px;
+}
+.nav{
+    margin: 15px;
+}
+.nav-tabs{
+    border-bottom: none;
+}
+.nav li a{
+    margin:0 30px 0 0;
+    color: gray;
+    text-decoration: none;
+}
+.nav li a:hover{
+    color:black;
+}
+.tab-content .form-inline .form-group{
+    margin-bottom: 10px;
+}
+.tab-content .btn-default{
+    margin: 5px 10px;
+}
+@media(max-width: 992px){
+    .container{
+        width: 300px;
+      
+    }
+}

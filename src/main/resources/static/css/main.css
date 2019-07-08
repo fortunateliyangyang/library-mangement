@@ -1,0 +1,31 @@
+body{
+	background-color: #eee
+}
+
+
+/*登录样式*/
+.content{
+	margin:100px 290px;
+}
+
+
+/*选择界面样式*/
+.choose{
+	margin:100px 520px
+
+}
+
+/*图书界面*/
+.bookMange{
+
+	margin:100px 500px;
+
+}
+/*用户管理*/
+.userMange{
+	margin:100px 500px;
+
+}
+.uerMange .tab-pane{
+	margin-top:50px;
+}

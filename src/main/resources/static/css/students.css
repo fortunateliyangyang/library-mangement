@@ -1,0 +1,73 @@
+.container{
+	position: relative;
+
+	padding:70px 0 0 5%;
+
+
+}
+.container .media{
+
+}
+.media .media-left{
+	margin-right: 20px;
+}
+.media .media-left img{
+	width: 50px;
+	height: 50px;
+}
+.media-body .list-group{
+	width: 22%;
+    border: none;
+}
+.media-body .list-group li{
+
+	margin-bottom: 3px;
+	border:none;
+	border-bottom: 1px solid #ddd ;
+}
+.media-body .list-group li e{
+	margin-left:5px;
+}
+.container .Function{
+	position: absolute;
+	right: 10%;
+	top:10%;
+	width: 55%
+}
+.Function{
+  padding-left: 10px;
+  border-left: 3px solid  #ddd;
+}
+.Function .nav-tabs{
+	border: none;
+}
+.Function .nav-tabs>li{
+	border: none;
+	border-bottom: none;
+}
+.Function .nav li a{
+	border:none;
+	border-bottom: none;
+}
+.tab-content .text{
+	width: 56px;
+	display: inline-table;
+	margin-right: 10px
+
+}
+.tab-content .optionType{
+  display: inline-table;
+}
+.tab-content .input-group{
+	margin-top: 10px;
+}
+.tab-content .result{
+	position: relative;
+	top:10px;
+}
+.tab-content .result .table {
+	margin: 0;
+}
+.tab-content .returnBook{
+	margin-top: 20px;
+}

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /library
+
+spring:
+  #mysql
+  datasource:
+      url: jdbc:mysql://localhost:3306/library_management?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=UTC
+      username: dand
+      password: abc123
+      driver_class_name: com.mysql.cj.jdbc.Driver
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  type-aliases-package: com.book.librarymangement.dao
+  mapper-locations: classpath:mapper/*.xml

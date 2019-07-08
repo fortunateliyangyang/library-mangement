@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel='stylesheet' type='text/css' href='../bootstrap/css/bootstrap.min.css' >
+        <link rel='stylesheet' type='text/css' href='../css/linea.css' >
+        <link rel='stylesheet' type='text/css' href='../css/ionicons.min.css' >
+        <link rel='stylesheet' type='text/css' href='../css/magnific-popup.css' >
+        <link href="../css/students.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <!--个人信息-->
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="../img/photo.jpg" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 id="nickName" class="media-heading"></h4>
+            <ul class="list-group">
+                <li id="stuId" class="list-group-item .col-md-4"><i class="icon ion-person"></i><e id="person"></e></li>
+              <li id="telPhone" class="list-group-item .col-md-4"><i class="icon ion-iphone"></i><e id="phone"></e>  </li>
+              <li id="email" class="list-group-item .col-md-4"><i class="icon ion-email"></i><e id="ema"></e>  </li>
+              <li id="speciality" class="list-group-item .col-md-4"><i class="icon ion-university"></i><e id="university"></e>   </li>
+              <li id="birth" class="list-group-item .col-md-4"><i class="icon ion-calendar"></i><e id="calendar"></e>  </li>
+              <li id="perWord" class="list-group-item .col-md-4"><i class="icon ion-pin"></i> <e id="pin"></e>  </li>
+            </ul>
+        </div>
+    </div>
+    <div class="Function">
+        <div class="col-lg-12">
+          <!-- Nav tabs -->
+          <ul id="myTab" class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">我的借阅</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">书籍检索</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">自助还书</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+             <!-- 读者的借阅 -->
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <table class="table table-hover">
+                  <tr>
+                     <td>书籍编号</td>
+                     <td>书籍名称</td>
+                     <td>借阅状态</td>
+                 </tr>
+                    <tr>
+                     <td>1</td>
+                     <td>高数</td>
+                     <td>已借</td>
+                 </tr>
+                    <tr>
+                     <td>2</td>
+                     <td>英语</td>
+                     <td>已超期</td>
+                 </tr>
+                </table>
+            </div>
+            <!-- 书籍检索 -->
+            <div role="tabpanel" class="tab-pane " id="profile">
+                    <div class="col-lg-12">
+                        <h5 class="text">查询方式</h5>
+                            <span class="optionType" >
+                                <select id="selectID">
+                                  <option>编号</option>
+                                  <option>书名</option>
+                                  <option>类型</option>
+                                </select>
+                            </span>
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                              <button  id="search" class="btn btn-default " type="button">搜索</button>
+                            </span>
+                        </div><!-- /input-group -->                       
+                     </div><!-- /.col-lg-6 -->
+
+                    <!-- 查询结果 -->
+                 <div id="searchResult" class="result col-lg-12">
+                    <h5 >查询结果</h5>
+                        <table id="tableResult" class="table table-hover">
+                          <tr>
+                             <td>书籍编号</td>
+                              <td>书籍名称</td>
+                              <td>出版社</td>
+                              <td>借阅状态</td>
+                              <td>借书</td>
+                          </tr>
+                             <!--<tr>-->
+                              <!--<td>1</td>-->
+                              <!--<td>高数</td>-->
+                              <!--<td>电子工业大学出版社</td>-->
+                              <!--<td>不可借</td>-->
+                              <!--<td><button value="借书" type="submit">借书</button></td>-->
+                          <!--</tr>-->
+                             <!--<tr>-->
+                              <!--<td>2</td>-->
+                              <!--<td>英语</td>-->
+                              <!--<td>电子工业大学出版社</td>-->
+                              <!--<td>不可借</td>-->
+                              <!--<td><button value="借书" type="submit">借书</button></td>-->
+                          <!--</tr>-->
+                        </table>
+                </div>
+            </div><!-- /.row -->
+            <!-- 自助还书 -->
+            <div role="tabpanel" class="tab-pane " id="messages">
+                <div class="row returnBook">
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="请输入书籍编号">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">还书</button>
+                        </span>
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+             
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- javascript -->
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/students.js"></script>
+</body>
+</html>
